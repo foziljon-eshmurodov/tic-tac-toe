@@ -10,7 +10,7 @@
 }
 
 .scores-table {
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
   font-size: 1.5rem;
   border-spacing: 10px 0;
 }
@@ -76,4 +76,25 @@ button:hover {
 button:active {
   background-color: black;
   color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .scores-table {
+    font-size: 1rem;
+    border-spacing: 10px 0;
+  }
+
+  .winner-display {
+    font-size: 20px;
+  }
+
+  .table__data {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 160px;
+  }
 }

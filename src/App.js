@@ -67,6 +67,8 @@ function App() {
           cell.classList.add("chosen");
         });
       }
+      // for warning in command line adding return 
+      return true
     });
   };
 
@@ -134,7 +136,7 @@ function App() {
       {winner ? (
         <h1 className="winner_display">{winner} Won</h1>
       ) : (
-        <h1>{turn}'s turn</h1>
+        <h1 className='winner-display'>{turn}'s turn</h1>
       )}
 
       <table className="table">
@@ -161,7 +163,7 @@ function App() {
 
       <button onClick={tryAgain}>{winner ? "Try Again" : "Clear Table"}</button>
 
-      <div>&copy; Created by <a href='https://github.com/foziljon02'>Foziljon</a></div>
+      <div>&copy; Created by <a href='https://github.com/foziljon02' target="_blank" rel="noopener noreferrer" >Foziljon</a></div>
     </div>
   );
 }
